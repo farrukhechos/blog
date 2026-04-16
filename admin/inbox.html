@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inbox — Admin</title>
+  <link rel="stylesheet" href="../style/admin.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="admin-layout">
+    <aside class="sidebar">
+      <a href="index.html" class="brand">DashStack</a>
+      <nav>
+        <a href="index.html">Dashboard</a>
+        <a href="posts.html">Maqolalar</a>
+        <a href="inbox.html" class="active">Inbox</a>
+        <a href="new-post.html">Yangi maqola</a>
+        <a href="users.html">Foydalanuvchilar</a>
+        <a href="settings.html">Settings</a>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div class="search-block">
+          <span>🔍</span>
+          <input type="search" placeholder="Search mail" />
+        </div>
+        <div class="top-actions">
+          <button class="icon-btn">🔔</button>
+          <div class="user-card">
+            <div class="avatar">MR</div>
+            <div>
+              <p>Moni Roy</p>
+              <span>Admin</span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="page-heading">
+        <div>
+          <h1>Inbox</h1>
+          <p>Oxirgi xabarlar va pochta ro'yxatini kuzating.</p>
+        </div>
+      </section>
+
+      <section class="section card inbox-card">
+        <div class="inbox-actions">
+          <button class="small-btn blue">+ Compose</button>
+          <div class="label-list">
+            <span class="label primary">Primary</span>
+            <span class="label social">Social</span>
+            <span class="label work">Work</span>
+          </div>
+        </div>
+
+        <div class="inbox-grid">
+          <aside class="mail-sidebar">
+            <div class="mail-item active">Inbox <strong>1,253</strong></div>
+            <div class="mail-item">Starred <strong>245</strong></div>
+            <div class="mail-item">Sent <strong>24,532</strong></div>
+            <div class="mail-item">Draft <strong>09</strong></div>
+            <div class="mail-item">Spam <strong>14</strong></div>
+            <div class="mail-item">Important <strong>18</strong></div>
+            <div class="mail-item">Bin <strong>9</strong></div>
+          </aside>
+
+          <div class="mail-list">
+            <div class="mail-row selected">
+              <input type="checkbox" />
+              <span class="star">★</span>
+              <strong>Jullu Jalal</strong>
+              <span class="tag primary">Primary</span>
+              <span>Our Bachelor of Commerce program is ACBSP-accredited.</span>
+              <time>8:38 AM</time>
+            </div>
+            <div class="mail-row">
+              <input type="checkbox" />
+              <span class="star">☆</span>
+              <strong>Minerva Barnett</strong>
+              <span class="tag work">Work</span>
+              <span>Get Best Advertiser In Your Side Pocket</span>
+              <time>8:13 AM</time>
+            </div>
+            <div class="mail-row">
+              <input type="checkbox" />
+              <span class="star">☆</span>
+              <strong>Peter Lewis</strong>
+              <span class="tag friends">Friends</span>
+              <span>Vacation Home Rental Success</span>
+              <time>7:52 PM</time>
+            </div>
+            <div class="mail-row">
+              <input type="checkbox" />
+              <span class="star">☆</span>
+              <strong>Anthony Briggs</strong>
+              <span class="tag work">Work</span>
+              <span>Free Classifieds Using Them To Promote Your Stuff Online</span>
+              <time>7:52 PM</time>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

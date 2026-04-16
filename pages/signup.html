@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign In — Farrux G'aniboyev</title>
+  <link rel="stylesheet" href="../style/homePage.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <style>
+    .signup-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: calc(100vh - 180px);
+      padding: 4rem 6vw;
+    }
+    
+    .signup-form {
+      background: #fff;
+      padding: 3rem;
+      border-radius: 16px;
+      border: 1px solid #eee;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      width: 100%;
+      max-width: 450px;
+    }
+    
+    .signup-form h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    
+    .signup-form p {
+      text-align: center;
+      color: #666;
+      margin-bottom: 2rem;
+      font-size: 0.95rem;
+    }
+    
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+    
+    .form-group label {
+      display: block;
+      margin-bottom: 0.75rem;
+      font-weight: 500;
+      color: #333;
+      font-size: 0.95rem;
+    }
+    
+    .form-group input {
+      width: 100%;
+      padding: 0.95rem 1.2rem;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      transition: all 0.2s;
+    }
+    
+    .form-group input:focus {
+      outline: none;
+      border-color: #111;
+      box-shadow: 0 0 0 3px rgba(17, 17, 17, 0.1);
+    }
+    
+    .form-group input::placeholder {
+      color: #aaa;
+    }
+    
+    .checkbox-group {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 2rem;
+      font-size: 0.9rem;
+    }
+    
+    .checkbox-group input {
+      width: auto;
+      cursor: pointer;
+    }
+    
+    .submit-btn {
+      width: 100%;
+      padding: 1rem;
+      background: #111;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    
+    .submit-btn:hover {
+      background: #333;
+    }
+    
+    .login-link {
+      text-align: center;
+      margin-top: 1.5rem;
+      font-size: 0.9rem;
+    }
+    
+    .login-link a {
+      color: #111;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    
+    .login-link a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="../index.html" class="logo">Farrux's Blog</a>
+  <button class="menu-toggle" id="menuToggle">☰</button>
+  <ul id="navMenu">
+    <li><a href="blogs.html">Blog</a></li>
+    <li><a href="support.html">Support the Project</a></li>
+    <li><a href="signup.html">Sigin In</a></li>
+  </ul>
+</nav>
+
+<script>
+  const menuToggle = document.getElementById('menuToggle');
+  const navMenu = document.getElementById('navMenu');
+  
+  menuToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+  });
+  
+  document.querySelectorAll('#navMenu a').forEach(link => {
+    link.addEventListener('click', () => {
+      navMenu.classList.remove('active');
+    });
+  });
+</script>
+
+<!-- SIGNUP SECTION -->
+<section class="signup-container">
+  <div class="signup-form">
+    <h2>Sign In</h2>
+    <p>Sign up to be notified of new articles</p>
+    <form>
+      <div class="form-group">
+        <label for="name">First Name</label>
+        <input type="text" id="name" placeholder="Farrux G'aniboyev" required />
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="you@example.com" required />
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="At least 8 characters" required />
+      </div>
+      <div class="checkbox-group">
+        <input type="checkbox" id="terms" required />
+        <label for="terms" style="margin: 0; cursor: pointer;">I agree to the Terms and Conditions</label>
+      </div>
+      <button type="submit" class="submit-btn">Sign In</button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>&copy; 2026 Farrux G'aniboyev</p>
+  <div class="footer-links">
+    <a href="blogs.html">Blog</a>
+    <a href="support.html">Support</a>
+  </div>
+</footer>
+
+</body>
+</html>

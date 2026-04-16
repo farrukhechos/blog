@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Foydalanuvchilar — Admin</title>
+  <link rel="stylesheet" href="../style/admin.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="admin-layout">
+    <aside class="sidebar">
+      <a href="index.html" class="brand">DashStack</a>
+      <nav>
+        <a href="index.html">Dashboard</a>
+        <a href="posts.html">Maqolalar</a>
+        <a href="inbox.html">Inbox</a>
+        <a href="new-post.html">Yangi maqola</a>
+        <a href="users.html" class="active">Foydalanuvchilar</a>
+        <a href="settings.html">Settings</a>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div class="search-block">
+          <span>🔍</span>
+          <input type="search" placeholder="Search users" />
+        </div>
+        <div class="top-actions">
+          <button class="icon-btn">🔔</button>
+          <div class="user-card">
+            <div class="avatar">MR</div>
+            <div>
+              <p>Moni Roy</p>
+              <span>Admin</span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="page-heading">
+        <div>
+          <h1>Foydalanuvchilar</h1>
+          <p>Sizning platformangizdagi foydalanuvchilar ro'yxati va ularning holati.</p>
+        </div>
+      </section>
+
+      <section class="section card table-card">
+        <div class="section-header">
+          <h2>Foydalanuvchilar</h2>
+          <button class="small-btn">Add User</button>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Ism</th>
+              <th>Email</th>
+              <th>Ruxsat</th>
+              <th>Status</th>
+              <th>Ro'yxatga olish</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Moni Roy</td>
+              <td>moni@example.com</td>
+              <td>Admin</td>
+              <td><span class="status status-active">Active</span></td>
+              <td>12.01.2026</td>
+            </tr>
+            <tr>
+              <td>David Park</td>
+              <td>david@example.com</td>
+              <td>Editor</td>
+              <td><span class="status status-active">Active</span></td>
+              <td>08.02.2026</td>
+            </tr>
+            <tr>
+              <td>Sophie Lee</td>
+              <td>sophie@example.com</td>
+              <td>Viewer</td>
+              <td><span class="status status-banned">Banned</span></td>
+              <td>23.03.2026</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

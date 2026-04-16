@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Settings — Admin</title>
+  <link rel="stylesheet" href="../style/admin.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="admin-layout">
+    <aside class="sidebar">
+      <a href="index.html" class="brand">DashStack</a>
+      <nav>
+        <a href="index.html">Dashboard</a>
+        <a href="posts.html">Maqolalar</a>
+        <a href="inbox.html">Inbox</a>
+        <a href="new-post.html">Yangi maqola</a>
+        <a href="users.html">Foydalanuvchilar</a>
+        <a href="settings.html" class="active">Settings</a>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div class="search-block">
+          <span>🔍</span>
+          <input type="search" placeholder="Search settings" />
+        </div>
+        <div class="top-actions">
+          <button class="icon-btn">🔔</button>
+          <div class="user-card">
+            <div class="avatar">MR</div>
+            <div>
+              <p>Moni Roy</p>
+              <span>Admin</span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="page-heading">
+        <div>
+          <h1>Settings</h1>
+          <p>Sayt sozlamalarini shu yerda boshqaring va konfiguratsiyalarni o'zgartiring.</p>
+        </div>
+      </section>
+
+      <section class="section card settings-card">
+        <div class="settings-grid">
+          <div class="setting-item">
+            <h3>General</h3>
+            <p>Sayt nomi, manzil va boshqa asosiy ma'lumotlar.</p>
+          </div>
+          <div class="setting-item">
+            <h3>Security</h3>
+            <p>Parol, ikki faktorli autentifikatsiya va xavfsizlik sozlamalari.</p>
+          </div>
+          <div class="setting-item">
+            <h3>Notifications</h3>
+            <p>Bildirishnomalar va kontakt usullarini boshqaring.</p>
+          </div>
+          <div class="setting-item">
+            <h3>Appearance</h3>
+            <p>Rang sxemalari, tema va interfeys sozlamalari.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

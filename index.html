@@ -11,12 +11,28 @@
 
 <nav>
   <a href="#" class="logo">Farrux's Blog</a>
-  <ul>
-
+  <button class="menu-toggle" id="menuToggle">☰</button>
+  <ul id="navMenu">
     <li><a href="./pages/blogs.html">Blog</a></li>
     <li><a href="./pages/support.html">Support the Project</a></li>
+    <li><a href="./pages/signup.html">Sign In</a></li>
   </ul>
 </nav>
+
+<script>
+  const menuToggle = document.getElementById('menuToggle');
+  const navMenu = document.getElementById('navMenu');
+  
+  menuToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+  });
+  
+  document.querySelectorAll('#navMenu a').forEach(link => {
+    link.addEventListener('click', () => {
+      navMenu.classList.remove('active');
+    });
+  });
+</script>
 
 <!-- HERO -->
 <section class="hero">
@@ -49,12 +65,12 @@
 <!-- NEWSLETTER -->
 <div class="newsletter">
   <div>
-    <h3>Let's subscribe to read new blogs</h3>
-    <p>Every new blog will go to your inbox</p>
+    <h3>Ro'yxatdan o'ting</h3>
+    <p>Yangi maqolalardan xabardor bo'lish uchun emailingizni kiriting</p>
   </div>
   <div class="nl-form">
     <input type="email" placeholder="email@manzil.uz"/>
-    <button type="button">Subscribe</button>
+    <button type="button">Ro'yxatdan o'tish</button>
   </div>
 </div>
 

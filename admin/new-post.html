@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yangi maqola — Admin</title>
+  <link rel="stylesheet" href="../style/admin.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="admin-layout">
+    <aside class="sidebar">
+      <a href="index.html" class="brand">DashStack</a>
+      <nav>
+        <a href="index.html">Dashboard</a>
+        <a href="posts.html">Maqolalar</a>
+        <a href="inbox.html">Inbox</a>
+        <a href="new-post.html" class="active">Yangi maqola</a>
+        <a href="users.html">Foydalanuvchilar</a>
+        <a href="settings.html">Settings</a>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div class="search-block">
+          <span>🔍</span>
+          <input type="search" placeholder="Search" />
+        </div>
+        <div class="top-actions">
+          <button class="icon-btn">🔔</button>
+          <div class="user-card">
+            <div class="avatar">MR</div>
+            <div>
+              <p>Moni Roy</p>
+              <span>Admin</span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="page-heading">
+        <div>
+          <h1>Yangi maqola</h1>
+          <p>Yangi maqolani shu yerda tayyorlab, keyin e'lon qilishingiz mumkin.</p>
+        </div>
+      </section>
+
+      <section class="section card form-card">
+        <form>
+          <div class="form-row">
+            <label>Sarlavha</label>
+            <input type="text" placeholder="Maqola sarlavhasi" />
+          </div>
+          <div class="form-row">
+            <label>Kategoriya</label>
+            <select>
+              <option>Web Development</option>
+              <option>Frontend</option>
+              <option>Backend</option>
+              <option>Productivity</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label>Status</label>
+            <select>
+              <option>Draft</option>
+              <option>Published</option>
+              <option>Review</option>
+            </select>
+          </div>
+          <div class="form-row full-width">
+            <label>Qisqacha tavsif</label>
+            <textarea rows="5" placeholder="Maqola haqida qisqacha..."></textarea>
+          </div>
+          <div class="form-row full-width">
+            <label>Kontent</label>
+            <textarea rows="10" placeholder="Bu yerda maqolaning asosiy matni bo'ladi..."></textarea>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="donate-btn">Saqlash</button>
+            <button type="button" class="small-btn">Qoralama</button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

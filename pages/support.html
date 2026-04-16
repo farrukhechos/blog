@@ -1,10 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uz">
 <head>
-    <meta charset="UTF-8">
-    <title>Support the project</title>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Support the Project — Farrux G'aniboyev</title>
+  <link rel="stylesheet" href="../style/support.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
 </head>
 <body>
+
+<nav>
+  <a href="../index.html" class="logo">Farrux's Blog</a>
+  <button class="menu-toggle" id="menuToggle">☰</button>
+  <ul id="navMenu">
+    <li><a href="blogs.html">Blog</a></li>
+    <li><a href="support.html">Support the Project</a></li>
+    <li><a href="signup.html">Sign In</a></li>
+  </ul>
+</nav>
+
+<script>
+  const menuToggle = document.getElementById('menuToggle');
+  const navMenu = document.getElementById('navMenu');
+  
+  menuToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+  });
+  
+  document.querySelectorAll('#navMenu a').forEach(link => {
+    link.addEventListener('click', () => {
+      navMenu.classList.remove('active');
+    });
+  });
+</script>
+
+<!-- HERO -->
+<section class="hero">
+  <div style="font-size: 4rem; margin-bottom: 1rem;">☕</div>
+  <h1>Buy me a coffe</h1>
+  <p>If you find my work useful, please support me with a small donation. This will motivate me and help me create new content.</p>
+</section>
+
+<!-- DONATE SECTION -->
+<section class="posts-section">
+  <div class="donate-card">
+    <h3>Choose the amount of donut</h3>
+    <div class="amount-options">
+      <button class="amount-btn" onclick="selectAmount(5000)">5,000 UZS</button>
+      <button class="amount-btn" onclick="selectAmount(10000)">10,000 UZS</button>
+      <button class="amount-btn" onclick="selectAmount(25000)">25,000 UZS</button>
+      <button class="amount-btn" onclick="selectAmount(50000)">50,000 UZS</button>
+    </div>
+    <div class="custom-amount">
+      <input type="number" id="customAmount" placeholder="Boshqa miqdor" min="1000">
+      <span>UZS</span>
+    </div>
+    <button class="donate-btn" onclick="donate()">Donate</button>
+  </div>
+  
+  <p style="margin-top: 3rem; text-align: center; color: #666;">Thank you! Your help is greatly appreciated.</p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <a href="#" style="font-family:'sans-serif', sans-serif; font-size:1rem; color:#111; text-decoration:none; font-weight: 600;">Farrux's Blog</a>
+  <p>© 2026 Farrux Ganiboyev</p>
+  <div class="footer-links">
+    <a href="https://t.me/farruxecho" target="_blank">Telegram</a>
+    <a href="https://github.com/farrukhechos" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/farrux-ganiboyev-a51789399/" target="_blank">LinkedIn</a>
+  </div>
+</footer>
+
+<script>
+let selectedAmount = 0;
+
+function selectAmount(amount) {
+    selectedAmount = amount;
+    document.querySelectorAll('.amount-btn').forEach(btn => btn.classList.remove('selected'));
+    event.target.classList.add('selected');
+    document.getElementById('customAmount').value = '';
+}
+
+function donate() {
+    const custom = document.getElementById('customAmount').value;
+    const amount = custom ? parseInt(custom) : selectedAmount;
+    if (amount > 0) {
+        alert(`Rahmat! ${amount} UZS donat qilish uchun karta raqami: 1234 5678 9012 3456`);
+    } else {
+        alert('Iltimos, miqdorni tanlang yoki kiriting.');
+    }
+}
+</script>
 
 </body>
 </html>

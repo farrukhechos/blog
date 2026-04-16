@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard — Farrux</title>
+  <link rel="stylesheet" href="../style/admin.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="admin-layout">
+    <aside class="sidebar">
+      <a href="index.html" class="brand">DashStack</a>
+      <nav>
+        <a href="index.html" class="active">Dashboard</a>
+        <a href="posts.html">Maqolalar</a>
+        <a href="inbox.html">Inbox</a>
+        <a href="new-post.html">Yangi maqola</a>
+        <a href="users.html">Foydalanuvchilar</a>
+        <a href="settings.html">Settings</a>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div class="search-block">
+          <span>🔍</span>
+          <input type="search" placeholder="Search" />
+        </div>
+        <div class="top-actions">
+          <button class="icon-btn">🔔</button>
+          <div class="user-card">
+            <div class="avatar">MR</div>
+            <div>
+              <p>Moni Roy</p>
+              <span>Admin</span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="page-heading">
+        <div>
+          <h1>Dashboard</h1>
+          <p>Admin panelga xush kelibsiz. So‘nggi ko‘rsatkichlarni shu yerda kuzating.</p>
+        </div>
+      </section>
+
+      <section class="stats-grid">
+        <article class="stat-card">
+          <p>Total Views</p>
+          <h2>45,689</h2>
+          <span class="stat-change positive">+12.5% from yesterday</span>
+        </article>
+        <article class="stat-card">
+          <p>Total Users</p>
+          <h2>2,340</h2>
+          <span class="stat-change positive">+5.2% from last week</span>
+        </article>
+        <article class="stat-card">
+          <p>Total Posts</p>
+          <h2>156</h2>
+          <span class="stat-change positive">+3 new this month</span>
+        </article>
+        <article class="stat-card">
+          <p>Total Donations</p>
+          <h2>$1,250</h2>
+          <span class="stat-change positive">+18.7% from last month</span>
+        </article>
+      </section>
+
+      <section class="section card chart-card">
+        <div class="section-header">
+          <h2>Blog Analytics</h2>
+          <button class="small-btn">October</button>
+        </div>
+        <div class="chart-frame">
+          <div class="chart-grid"></div>
+          <div class="chart-line"></div>
+          <div class="chart-spot"></div>
+          <div class="chart-value">12,456 Views</div>
+        </div>
+      </section>
+
+      <section class="section card table-card">
+        <div class="section-header">
+          <h2>Recent Posts</h2>
+          <button class="small-btn">October</button>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Post Title</th>
+              <th>Category</th>
+              <th>Views</th>
+              <th>Published</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>JavaScript asoslari</td>
+              <td>Web Development</td>
+              <td>6,540</td>
+              <td>12.09.2026</td>
+              <td><span class="status status-published">Published</span></td>
+            </tr>
+            <tr>
+              <td>CSS Grid va Flex</td>
+              <td>Frontend</td>
+              <td>3,120</td>
+              <td>11.09.2026</td>
+              <td><span class="status status-published">Published</span></td>
+            </tr>
+            <tr>
+              <td>Kodlash tezligini oshirish</td>
+              <td>Productivity</td>
+              <td>1,980</td>
+              <td>10.09.2026</td>
+              <td><span class="status status-draft">Draft</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

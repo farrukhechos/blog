@@ -1,4 +1,3 @@
-
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
@@ -30,15 +29,6 @@ nav {
     font-weight: 600;
 }
 
-.menu-toggle {
-    display: none;
-    border: none;
-    background: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-    padding: 0.5rem;
-}
-
 nav ul {
     list-style: none;
     display: flex;
@@ -54,6 +44,15 @@ nav ul a {
 }
 
 nav ul a:hover { color: #111; }
+
+.menu-toggle {
+    display: none;
+    border: none;
+    background: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+}
 
 /* HERO */
 .hero {
@@ -301,7 +300,99 @@ nav ul a:hover { color: #111; }
     color: #111;
 }
 
-/* FOOTER */
+/* DONATE CARD */
+.donate-card {
+    background: #f8f8f8;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-top: 2rem;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.donate-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #111;
+    text-align: center;
+}
+
+.amount-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.amount-btn {
+    padding: 1rem;
+    background: #fff;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-align: center;
+}
+
+.amount-btn:hover {
+    border-color: #111;
+    background: #f0f0f0;
+}
+
+.amount-btn.selected {
+    border-color: #111;
+    background: #111;
+    color: #fff;
+}
+
+.custom-amount {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.custom-amount input {
+    flex: 1;
+    padding: 0.75rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.custom-amount input:focus {
+    border-color: #111;
+}
+
+.custom-amount span {
+    font-size: 1rem;
+    color: #666;
+}
+
+.donate-btn {
+    width: 100%;
+    padding: 1rem;
+    background: #111;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.donate-btn:hover {
+    background: #333;
+}
+
 footer {
     border-top: 1px solid #eee;
     padding: 2rem 6vw;
